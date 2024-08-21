@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>Crypto Web App</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Crypto Web App</h1>
+        <div class="encryption-section">
+            <h2>Encrypt Message</h2>
+            <textarea id="message" placeholder="Enter your message"></textarea>
+            <button onclick="encryptMessage()">Encrypt</button>
+            <p>Encrypted Message: <span id="encryptedMessage"></span></p>
+            <p>Key: <span id="key"></span></p>
+        </div>
+        <div class="decryption-section">
+            <h2>Decrypt Message</h2>
+            <textarea id="encryptedInput" placeholder="Enter encrypted message"></textarea>
+            <input type="text" id="keyInput" placeholder="Enter key">
+            <button onclick="decryptMessage()">Decrypt</button>
+            <p>Decrypted Message: <span id="decryptedMessage"></span></p>
+        </div>
+    </div>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
